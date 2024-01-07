@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhxsotnvyumsn"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_v1fnx"]
+[ext_resource type="PackedScene" uid="uid://bw5edvk0cclpl" path="res://player.tscn" id="1_vku6i"]
+[ext_resource type="PackedScene" uid="uid://csruh1faxg633" path="res://coin.tscn" id="2_gtxrm"]
+[ext_resource type="Texture2D" uid="uid://b4lcseklk1r4t" path="res://assets/grass.png" id="3_rxjmh"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_v1fnx")
+coin_scene = ExtResource("2_gtxrm")
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_rxjmh")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("1_vku6i")]
+
+[node name="GameTimer" type="Timer" parent="."]
