@@ -80,7 +80,7 @@ metadata/_edit_group_ = true
 sprite_frames = SubResource("SpriteFrames_i2b3r")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.938818
+frame_progress = 0.937946
 offset = Vector2(2.08165e-12, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

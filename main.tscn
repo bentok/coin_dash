@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://dhxsotnvyumsn"]
+[gd_scene load_steps=12 format=3 uid="uid://dhxsotnvyumsn"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_v1fnx"]
 [ext_resource type="PackedScene" uid="uid://bw5edvk0cclpl" path="res://player.tscn" id="1_vku6i"]
 [ext_resource type="PackedScene" uid="uid://csruh1faxg633" path="res://coin.tscn" id="2_gtxrm"]
+[ext_resource type="PackedScene" uid="uid://wgpq1qk528jq" path="res://cactus.tscn" id="3_8nu46"]
 [ext_resource type="PackedScene" uid="uid://bcs2rhk4yvjg5" path="res://powerup.tscn" id="3_askxm"]
 [ext_resource type="Texture2D" uid="uid://b4lcseklk1r4t" path="res://assets/grass.png" id="3_rxjmh"]
 [ext_resource type="PackedScene" uid="uid://bbaqduplf5o6m" path="res://hud.tscn" id="5_wcneb"]
@@ -14,6 +15,7 @@
 [node name="Main" type="Node"]
 script = ExtResource("1_v1fnx")
 coin_scene = ExtResource("2_gtxrm")
+cactus_scene = ExtResource("3_8nu46")
 powerup_scene = ExtResource("3_askxm")
 
 [node name="Background" type="TextureRect" parent="."]
